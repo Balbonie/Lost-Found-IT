@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/message_time"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:text="UNCLAIMED"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/not_claimed"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/message_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/unclaimed_history"
+        android:drawablePadding="2dip"/>
+
+    <TextView
+        android:text="CLAIMED"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/claimed"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/message_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/claimed_history"
+        android:drawablePadding="2dip"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/loserName"
+    android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loserContact"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loserStat"
+        android:layout_alignParentRight="true"
+        android:text="Not Claimed"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loserStatusF"
+        android:text="Lost"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/loserDesc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loserDesc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/loserWhere"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

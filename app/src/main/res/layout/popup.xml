@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@color/kenwokurae"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"><![CDATA[
+            >
+
+            ]]>
+
+            <LinearLayout
+                android:layout_width="228dp"
+                android:layout_height="132dp"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/dismiss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/back"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accpet"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignTop="@+id/dismiss"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/decision"
+                        android:id="@+id/textView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.77"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/update"
+                        android:layout_alignEnd="@+id/update" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

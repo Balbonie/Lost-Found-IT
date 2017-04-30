@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.androidclass.DisplayLostPersonal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ITEM STATUS:"
+                android:id="@+id/textView_ItemStatus"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/statusFieldL"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView_ItemStatus"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:hint="STATUS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name :"
+                android:id="@+id/textView_Name"
+                android:layout_below="@+id/textView_ItemStatus"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="23dp"
+                android:layout_toStartOf="@+id/statusFieldL"
+                android:layout_toLeftOf="@+id/statusFieldL"
+
+                android:height="40dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Contact No. :"
+                android:id="@+id/textView_ContactNo."
+                android:layout_alignTop="@+id/lostContact"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/lostContact"
+
+                android:layout_alignRight="@+id/textView_Description"
+                android:layout_alignEnd="@+id/textView_Description"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Description of lost item :"
+                android:id="@+id/textView_Description"
+                android:layout_below="@+id/textView_ContactNo."
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="32dp"
+                android:layout_toStartOf="@+id/statusFieldL"
+                android:layout_toLeftOf="@+id/statusFieldL" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Where was it lost? :"
+                android:id="@+id/textView_Location"
+                android:layout_below="@+id/textView_Description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="37dp"
+                android:layout_toLeftOf="@+id/lostWhere"
+                android:layout_toStartOf="@+id/lostWhere" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="RETRIEVAL STATUS:"
+                android:id="@+id/textView_RetStatus"
+                android:layout_below="@+id/textView_Location"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/lostWhere"
+                android:layout_toStartOf="@+id/lostWhere"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/lostStat"
+                android:layout_alignTop="@+id/textView_RetStatus"
+                android:layout_alignRight="@+id/statusFieldL"
+                android:layout_alignEnd="@+id/statusFieldL"
+                android:layout_alignBottom="@+id/textView_RetStatus"
+                android:layout_toRightOf="@+id/textView_RetStatus"
+                android:layout_toEndOf="@+id/textView_RetStatus"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:hint="YES/NO"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lostName"
+                android:hint="eg. Juan Dela Cruz"
+                android:layout_alignTop="@+id/textView_Name"
+                android:layout_alignRight="@+id/lostContact"
+                android:layout_alignEnd="@+id/lostContact"
+                android:layout_toRightOf="@+id/textView_Name"
+                android:layout_toEndOf="@+id/textView_Name"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:maxLength="30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lostContact"
+                android:hint="eg. 09261234567"
+                android:layout_below="@+id/lostName"
+                android:layout_toRightOf="@+id/textView_ContactNo."
+                android:layout_marginTop="27dp"
+                android:layout_alignRight="@+id/statusFieldL"
+                android:layout_alignEnd="@+id/statusFieldL"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:maxLength="11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lostDesc"
+                android:layout_alignTop="@+id/textView_Description"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/textView_Description"
+                android:hint="eg. Laptop Charger"
+                android:layout_alignLeft="@+id/lostContact"
+                android:layout_alignStart="@+id/lostContact"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:maxLines="3"
+                android:maxHeight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lostWhere"
+                android:layout_alignTop="@+id/textView_Location"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView_RetStatus"
+                android:hint="eg. Outside Lab 4"
+                android:layout_alignLeft="@+id/lostDesc"
+                android:layout_alignStart="@+id/lostDesc"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:maxLines="3"
+                android:maxHeight="5dp"
+                android:linksClickable="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_RetStatus"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/claim"
+                    android:id="@+id/claim"
+                    android:layout_below="@+id/textView_Location"
+                    android:textSize="30sp"
+                    android:background="@drawable/buttons"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:nestedScrollingEnabled="false"
+                    android:textColor="@color/abc_primary_text_material_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_RetStatus"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="64dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:id="@+id/back"
+                    android:layout_below="@+id/textView_Location"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:textSize="30sp"
+                    android:background="@drawable/buttons"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:nestedScrollingEnabled="false"
+                    android:onClick="closeP" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

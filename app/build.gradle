@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.example.android.androidclass"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled false
+
+        repositories {
+            maven { url 'https://maven.fabric.io/public' }
+            mavenCentral()
+        }
+
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        flavor1 {
+        }
+        flavor2 {
+            proguardFile 'flavor2-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.firebaseui:firebase-ui:1.1.1'
+
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

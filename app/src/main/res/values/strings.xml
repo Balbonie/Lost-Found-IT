@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Lost/Found IT </string>
+    <string name="nameField">Name:</string>
+    <string name="contactField">Contact No. :</string>
+    <string name="descField">Description of found item :</string>
+    <string name="whereFound">Where was it found? :</string>
+    <string name="retStat">RETRIEVAL STATUS:</string>
+    <string name="back">Back</string>
+    <string name="registerItem">Register</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Account Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_lost_found_bar">LostFoundBar</string>
+    <string name="generalList">View Lost and Found Items</string>
+    <string name="found">Found an Item</string>
+    <string name="lost">Lost an Item</string>
+    <string name="foundList">Find History</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_lost_found_ore">Lost/FoundIT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registerLost">Register as Lost</string>
+    <string name="registerFound">Register as Found</string>
+    <string name="claim">Register as Claimed</string>
+    <string name="accpet">Accept</string>
+    <string name="decision">Are you sure you want to register the item as claimed?</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register">Register Account</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="registerL">Register</string>
+    <string name="title_activity_tab_samp">TabSamp</string>
+    <string name="title_activity_adjust">AdjustActivity</string>
+    <string name="update">Update Credentials</string>
+
+
+</resources>
