@@ -23,6 +23,7 @@ public class RegisterLost {
     public RegisterLost() {
     }
 
+
     public RegisterLost(String lostName, String lostContact, String lostDesc, String lostWhere, String userID, String lostStat, String lostStatusFL, String lostNameStatDescWhere) {
         this.lost_name = lostName;
         this.lost_contact = lostContact;

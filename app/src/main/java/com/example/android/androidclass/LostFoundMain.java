@@ -262,7 +262,7 @@ public class LostFoundMain extends AppCompatActivity {
         //UsersHelper.clearSharedPreferences(this);
         loginStatus = 1;
         startActivity(loginIntent);
-        Toast.makeText(this, "User logged out.", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "User logged out.", Toast.LENGTH_SHORT).show();
         super.finish();
     }
 
@@ -306,7 +306,7 @@ public class LostFoundMain extends AppCompatActivity {
         //setSupportActionBar(toolbar);
         if (ConnectionHelper.verifyConnection(this))
         {
-            if (user.getEmail().contains("ust.edu.ph")) {
+            if (user.getEmail().contains("ust-ics.mygbiz.com")) {
                 try {
 
 
@@ -995,6 +995,7 @@ public class LostFoundMain extends AppCompatActivity {
                             listFHis.setVisibility(View.VISIBLE);
                             listLHis.setVisibility(View.GONE);
                             noItemsPersonal.setVisibility(View.GONE);
+                            String userName = user.getDisplayName();
                             FirebaseListAdapter<RegisterFound> adapter = new FirebaseListAdapter<RegisterFound>(getActivity(), RegisterFound.class,
                                     R.layout.found_items_lv, FirebaseDatabase.getInstance().getReference("Found Items").orderByChild("found_name").equalTo(userName)) {
 

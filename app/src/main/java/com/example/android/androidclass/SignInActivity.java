@@ -134,7 +134,7 @@ public class SignInActivity extends AppCompatActivity {
                         cancelButton.setVisibility(View.GONE);
                         logoTextView.setVisibility(View.GONE);
 
-                        if(user.getEmail().contains("ust.edu.ph")){
+                        if (user.getEmail().contains("ust-ics.mygbiz.com")) {
                             Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                             if (user.getDisplayName() != null)
                                 nameTextView.setText("HI " + user.getDisplayName().toString());
@@ -157,7 +157,7 @@ public class SignInActivity extends AppCompatActivity {
 
                             user = null;
 
-                            Toast.makeText(SignInActivity.this, "Please use your 'ust.edu.ph' account. ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "Please use your 'ust-ics.mygbiz.com' account. ", Toast.LENGTH_SHORT).show();
 
 
                         }
@@ -206,6 +206,7 @@ public class SignInActivity extends AppCompatActivity {
                                 @Override
                                 public void onResult(Status status) {
 
+                                    Toast.makeText(getApplicationContext(), "User logged out.", Toast.LENGTH_SHORT).show();
                                     signInButton.setVisibility(View.VISIBLE);
                                     signOutButton.setVisibility(View.GONE);
                                     emailTextView.setText(" ".toString());
